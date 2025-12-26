@@ -214,21 +214,12 @@ onMounted(() => {
 
   initializePlayer(videoElement);
   addVideoInteractions();
-  addKeyboardKeyFunctions();
 });
 
 onBeforeUnmount(() => {
   removeKeyboardKeyFunctions();
   disposePlayer();
 });
-
-const addKeyboardKeyFunctions = () => {
-  document.addEventListener("keydown", keyDown);
-};
-
-const removeKeyboardKeyFunctions = () => {
-  document.removeEventListener("keydown", keyDown);
-};
 
 const toggleSubtitles = (value) => {
   showSubtitles.value = value;

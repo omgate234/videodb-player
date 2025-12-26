@@ -217,7 +217,6 @@ onMounted(() => {
 });
 
 onBeforeUnmount(() => {
-  removeKeyboardKeyFunctions();
   disposePlayer();
 });
 

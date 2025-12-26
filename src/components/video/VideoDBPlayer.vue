@@ -240,27 +240,6 @@ const toggleFullScreen = (value) => {
   emit("fullScreenChange", value);
 };
 
-const keyDown = (e) => {
-  const currentElement = document.activeElement.tagName;
-  if (currentElement === "TEXTAREA" || currentElement === "INPUT") {
-    return;
-  }
-  switch (e.code) {
-    case "Space":
-      e.preventDefault();
-      togglePlay();
-      return;
-    // case 'ArrowLeft':
-    //   e.preventDefault()
-    //   rewind()
-    //   return
-    // case 'ArrowRight':
-    //   e.preventDefault()
-    //   forward()
-    //   return
-  }
-};
-
 // Mouse and touch events
 const addVideoInteractions = () => {
   // Touch events

@@ -41,6 +41,7 @@
     "format": "prettier --write 'src/**/*.{ts,vue}'",
     "test": "vitest",
     "test-ci": "vitest --run",
+    "prepare": "npm run build",
     "prepublishOnly": "npm run build"
   },
   "dependencies": {
